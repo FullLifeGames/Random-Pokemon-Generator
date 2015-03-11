@@ -1,0 +1,2540 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7D574275-6F83-4A85-BBE3-C318AFC7B0A6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RandBats</RootNamespace>
+    <AssemblyName>RandBats</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FileSet.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pokemon.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Species.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bellsprout.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bergmite.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bibarel.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bidoof.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\binacle.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bisharp.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blastoise.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blastoise-mega.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blaziken.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blaziken-mega.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blissey.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blitzle.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boldore.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bonsly.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bouffalant.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\braixen.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\braviary.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\breloom.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bronzong.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bronzor.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\budew.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buizel.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bulbasaur.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buneary.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bunnelby.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\burmy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\burmy-sandy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\burmy-trash.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\butterfree.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cacnea.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cacturne.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camerupt.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carbink.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carnivine.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carracosta.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carvanha.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cascoon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\castform.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\castform-rainy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\castform-snowy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\castform-sunny.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caterpie.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\celebi.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chandelure.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chansey.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\charizard.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\charizard-mega-x.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\charizard-mega-y.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\charmander.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\charmeleon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chatot.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cherrim.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cherrim-sunshine.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cherubi.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chesnaught.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chespin.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chikorita.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chimchar.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chimecho.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chinchou.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chingling.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cinccino.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clamperl.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clauncher.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clawitzer.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\claydol.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clefable.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clefairy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cleffa.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloyster.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cobalion.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cofagrigus.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\combee.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\combusken.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\conkeldurr.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corphish.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corsola.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cottonee.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cradily.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cranidos.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crawdaunt.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cresselia.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\croagunk.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crobat.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\croconaw.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crustle.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cryogonal.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cubchoo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cubone.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cyndaquil.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\darkrai.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\darmanitan.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\darmanitan-zen.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\darumaka.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dedenne.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deerling.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deino.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delcatty.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delibird.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delphox.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deoxys.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deoxys-attack.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deoxys-defense.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deoxys-speed.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dewgong.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dewott.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dialga.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diancie.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diggersby.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diglett.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ditto.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dodrio.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doduo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\donphan.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doublade.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dragalge.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dragonair.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dragonite.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drapion.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dratini.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drifblim.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drifloon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drilbur.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drowzee.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\druddigon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ducklett.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dugtrio.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dunsparce.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\duosion.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\durant.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dusclops.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dusknoir.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\duskull.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dustox.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dwebble.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eelektrik.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eelektross.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eevee.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ekans.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\electabuzz.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\electivire.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\electrike.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\electrode.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\elekid.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\elgyem.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emboar.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emolga.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empoleon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\entei.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\escavalier.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\espeon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\espurr.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\excadrill.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exeggcute.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exeggutor.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exploud.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\farfetch%27d.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fearow.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\feebas.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fennekin.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\feraligatr.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ferroseed.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ferrothorn.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finneon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flaaffy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flabebe.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flareon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fletchinder.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fletchling.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\floatzel.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\floette.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\floette-az.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\floette-eternalflower.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\florges.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flygon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\foongus.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forretress.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fraxure.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frillish.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frillish-f.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\froakie.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frogadier.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\froslass.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\furfrou.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\furret.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gabite.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gallade.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\galvantula.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\garbodor.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\garchomp.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\garchomp-mega.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gardevoir.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gardevoir-mega.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gastly.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gastrodon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\genesect.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\genesect-burn.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\genesect-chill.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\genesect-douse.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\genesect-shock.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gengar.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gengar-mega.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\geodude.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gible.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gigalith.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\girafarig.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giratina.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giratina-origin.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glaceon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glalie.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glameow.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gligar.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gliscor.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gloom.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gogoat.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\golbat.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goldeen.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\golduck.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\golem.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\golett.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\golurk.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goodra.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goomy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gorebyss.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gothita.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gothitelle.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gothorita.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gourgeist.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gourgeist-small.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gourgeist-smlarge.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gourgeist-super.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\granbull.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\graveler.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\greninja.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grimer.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grotle.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\groudon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grovyle.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\growlithe.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grumpig.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gulpin.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gurdurr.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gyarados.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gyarados-mega.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happiny.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hariyama.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\haunter.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hawlucha.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\haxorus.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heatmor.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heatran.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heliolisk.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\helioptile.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heracross.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heracross-mega.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\herdier.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hippopotas.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hippowdon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hitmonchan.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hitmonlee.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hitmontop.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\honchkrow.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\honedge.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ho-oh.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hoothoot.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hoppip.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\horsea.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\houndoom.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\houndoom-mega.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\houndour.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\huntail.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hydreigon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hypno.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\igglybuff.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\illumise.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\infernape.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inkay.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ivysaur.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jellicent.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jellicent-f.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jigglypuff.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jirachi.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jolteon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\joltik.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jumpluff.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jynx.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kabuto.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kabutops.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kadabra.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kakuna.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kangaskhan.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kangaskhan-mega.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\karrablast.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kecleon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\keldeo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\keldeo-resolute.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kingdra.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kingler.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kirlia.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\klang.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\klefki.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\klink.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\klinklang.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\koffing.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\krabby.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kricketot.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kricketune.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\krokorok.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\krookodile.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kyogre.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kyurem.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kyurem-black.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kyurem-white.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lairon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lampent.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\landorus.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\landorus-therian.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lanturn.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lapras.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\larvesta.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\larvitar.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\latias.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\latias-mega.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\latios.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\latios-mega.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leafeon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leavanny.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ledian.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ledyba.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lickilicky.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lickitung.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\liepard.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lileep.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lilligant.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lillipup.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\linoone.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\litleo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\litwick.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lombre.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lopunny.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lotad.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loudred.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lucario.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lucario-mega.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ludicolo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lugia.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lumineon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lunatone.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\luvdisc.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\luxio.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\luxray.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\machamp.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\machoke.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\machop.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magby.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magcargo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magikarp.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magmar.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magmortar.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnemite.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magneton.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnezone.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\makuhita.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\malamar.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mamoswine.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manaphy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mandibuzz.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manectric.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manectric-mega.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mankey.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mantine.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mantyke.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maractus.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mareep.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marill.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marowak.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marshtomp.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\masquerain.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mawile.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mawile-mega.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medicham.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medicham-mega.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\meditite.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\meganium.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\meloetta.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\meloetta-pirouette.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\meowstic.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\meowstic-f.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\meowth.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mesprit.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\metagross.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\metang.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\metapod.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mew.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mewtwo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mewtwo-mega-x.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mewtwo-mega-y.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mienfoo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mienshao.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mightyena.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\milotic.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\miltank.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mimejr..gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minccino.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minun.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\misdreavus.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mismagius.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\moltres.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monferno.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mothim.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mr.mime.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mudkip.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\muk.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\munchlax.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\munna.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\murkrow.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\musharna.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\natu.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nidoking.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nidoqueen.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nidoran.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nidoranf.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nidoran-f.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nidoranm.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nidorina.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nidorino.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nincada.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ninetales.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ninjask.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noctowl.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noibat.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noivern.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nosepass.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\numel.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nuzleaf.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\octillery.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oddish.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\omanyte.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\omastar.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\onix.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oshawott.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pachirisu.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\palkia.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\palpitoad.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pancham.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pangoro.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panpour.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pansage.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pansear.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paras.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parasect.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\patrat.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pawniard.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pelipper.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\persian.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\petilil.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phanpy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phantump.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phione.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pichu.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pidgeot.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pidgeotto.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pidgey.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pidove.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pignite.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pikachu.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\piloswine.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pineco.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pinsir.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pinsir-mega.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\piplup.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plusle.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\politoed.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poliwag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poliwhirl.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poliwrath.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ponyta.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poochyena.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\porygon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\porygon2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\porygon-z.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\primeape.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prinplup.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\probopass.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\psyduck.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pumpkaboo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pumpkaboo-small.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pumpkaboo-smlarge.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pumpkaboo-super.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pupitar.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purrloin.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purugly.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pyroar.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pyroar-f.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quagsire.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quilava.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quilladin.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\qwilfish.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\raichu.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\raikou.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ralts.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rampardos.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rapidash.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\raticate.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rattata.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rayquaza.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\regice.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\regigigas.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\regirock.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\registeel.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\relicanth.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remoraid.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reshiram.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reuniclus.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rhydon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rhyhorn.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rhyperior.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\riolu.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\roggenrola.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\roselia.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\roserade.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rotom.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rotom-fan.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rotom-frost.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rotom-heat.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rotom-mow.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rotom-wash.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rufflet.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sableye.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salamence.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\samurott.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sandile.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sandshrew.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sandslash.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sawk.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sawsbuck.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scatterbug.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sceptile.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scizor.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scizor-mega.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scolipede.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scrafty.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scraggy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scyther.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seadra.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seaking.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sealeo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seedot.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seel.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seismitoad.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sentret.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\serperior.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\servine.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seviper.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sewaddle.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sharpedo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shaymin.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shaymin-sky.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shedinja.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shelgon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shellder.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shellos.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shelmet.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shieldon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shiftry.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shinx.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shroomish.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shuckle.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shuppet.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sigilyph.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\silcoon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\simipour.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\simisage.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\simisear.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skarmory.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skiddo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skiploom.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skitty.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skorupi.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skrelp.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skuntank.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slaking.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slakoth.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sliggoo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slowbro.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slowking.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slowpoke.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slugma.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slurpuff.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smeargle.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smoochum.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sneasel.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snivy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snorlax.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snorunt.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snover.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snubbull.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\solosis.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\solrock.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spearow.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spewpa.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spheal.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spinarak.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spinda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spiritomb.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spoink.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spritzee.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\squirtle.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stantler.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\staraptor.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\staravia.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\starly.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\starmie.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\staryu.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\steelix.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stoutland.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stunfisk.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stunky.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sudowoodo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suicune.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sunflora.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sunkern.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\surskit.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\swablu.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\swadloon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\swalot.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\swampert.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\swanna.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\swellow.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\swinub.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\swirlix.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\swoobat.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sylveon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\taillow.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\talonflame.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tangela.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tangrowth.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tauros.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teddiursa.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tentacool.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tentacruel.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tepig%2520%281%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tepig.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrakion.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\throh.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thundurus.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thundurus-therian.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\timburr.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tirtouga.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\togekiss.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\togepi.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\togetic.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torchic.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torkoal.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tornadus.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tornadus-therian.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torterra.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\totodile.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toxicroak.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tranquill.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trapinch.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\treecko.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trevenant.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tropius.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trubbish.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\turtwig.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tympole.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tynamo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\typhlosion.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tyranitar.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tyranitar-mega.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tyrantrum.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tyrantum.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tyrogue.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tyrunt.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\umbreon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unfezant.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unown.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ursaring.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uxie.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vanillish.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vanillite.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vanilluxe.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vaporeon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\venipede.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\venomoth.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\venonat.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\venusaur.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\venusaur-mega.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vespiquen.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vibrava.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\victini.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\victreebel.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vigoroth.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vileplume.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\virizion.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vivillon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\volbeat.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\volcarona.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\voltorb.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vullaby.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vulpix.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wailmer.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wailord.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\walrein.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wartortle.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\watchog.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\weavile.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\weedle.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\weepinbell.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\weezing.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\whimsicott.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\whirlipede.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\whiscash.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\whismur.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wigglytuff.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wingull.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wobbuffet.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\woobat.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wooper.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wormadam.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wormadam-sandy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wormadam-trash.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wurmple.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wynaut.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xatu.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xerneas.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yamask.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yanma.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yanmega.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yveltal.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zangoose.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zapdos.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zebstrika.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zekrom.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zigzagoon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoroark.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zorua.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zubat.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zweilous.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zygarde.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abomasnow.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abomasnow-mega.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abra.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\absol.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\absol-mega.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\accelgor.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aegislash.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aegislash-blade.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aerodactyl.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aerodactyl-mega.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aggron.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aggron-mega.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aipom.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alakazam.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alakazam-mega.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alomomola.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\altaria.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\amaura.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ambipom.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\amoonguss.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ampharos.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ampharos-mega.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anorith.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arbok.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arcanine.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arceus.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arceus-bug.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arceus-dark.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arceus-dragon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arceus-electric.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arceus-fairy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arceus-fighting.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arceus-fire.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arceus-flying.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arceus-ghost.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arceus-grass.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arceus-ground.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arceus-ice.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arceus-poison.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arceus-psychic.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arceus-rock.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arceus-steel.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arceus-water.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\archen.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\archeops.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ariados.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\armaldo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aromatisse.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aron.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\articuno.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\audino.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aurorus.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avalugg.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\axew.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\azelf.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\azumarill.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\azurill.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bagon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baltoy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banette.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banette-mega.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barbaracle.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barboach.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\basculin.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\basculin-bluestriped.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bastiodon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bayleef.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beartic.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beautifly.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beedrill.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beheeyem.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beldum.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bellossom.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
